@@ -1,0 +1,49 @@
+.globalDIV {
+    display: flex;
+    margin-top: -50px;
+}
+
+.firstLevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9px;
+    margin: auto;
+    background-color: white;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+}
+
+.completed {
+    position: relative;
+    border: 5px solid #79ea02;
+    border-radius: 50%;
+    padding: 10px; 
+} 
+
+.uncompleted {
+    border: 5px solid #b9b9b9;
+    border-radius: 50%;
+    padding: 10px; 
+}
+
+.check {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.intro {
+    margin-top: 7px;
+    background-color: #79ea02;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}

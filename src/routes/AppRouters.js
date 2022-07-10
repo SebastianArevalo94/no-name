@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../components/Login";
-// import Register from "../components/Register";
+import Register from "../components/Register";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashboardRouters from "./DashboardRouters";
 import PrivateRouters from "./PrivateRouters";
 import PublicRouters from "./PublicRouters";
+
 
 const AppRouters = () => {
   const [checking, setChecking] = useState(true);
@@ -39,7 +40,7 @@ const AppRouters = () => {
             </PublicRouters>
           }
         />
-{/* 
+
         <Route
           path="/register"
           element={
@@ -47,8 +48,8 @@ const AppRouters = () => {
               <Register />
             </PublicRouters>
           }
-        /> */}
-
+        />
+        
         <Route
           path="/*"
           element={
@@ -63,3 +64,21 @@ const AppRouters = () => {
 };
 
 export default AppRouters;
+
+
+
+// const AppRouters = () => {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Main />} />
+//         <Route path="/login" element={<Login />} />
+//         <Route path="/english" element={<English />} />
+//         <Route path="/french" element={<French />} />
+//         <Route path="/chinese" element={<Chinese />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// };
+
+// export default AppRouters;
